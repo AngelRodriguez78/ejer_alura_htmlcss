@@ -1,0 +1,112 @@
+/* Generales */
+
+/* Trabajando el header */
+
+
+header {
+    background-color: #bbbbbb;
+    padding: 20px 0;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.caja {
+    width: 940px;
+    position: relative;
+    margin: 0px auto;
+
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0px;
+
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+
+}
+
+nav a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #c78000;
+    text-decoration: underline;
+}
+
+/* trabajando el banner */
+
+#banner {
+    width: 100%;
+}
+
+
+/* trabajando seccion principal */
+
+.principal {
+    background: #CCCCCC;
+    padding: 20px;
+
+}
+
+.titulo-centralizado {
+    text-align: center;
+
+}
+
+.titulo-centralizado h2 {
+    font-size: 32px;
+}
+
+
+p {
+    text-align: center;
+}
+
+em strong {
+    color: red;
+}
+
+#mision {
+    font-size: 20px;
+}
+
+.diferenciales {
+    background: #FFFFFF;
+    padding: 30px;
+}
+
+.items {
+    font-style: italic;
+}
+
+.diferenciales ul {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+.imagenDiferenciales {
+    width: 50%;
+}
+
+footer {
+    padding: 40px;
+    text-align: center;
+    background: url(/assets/images/bg.jpg);
+}
+
+.copyright {
+    color: white;
+    font-size: 13px;
+    margin: 20px;
+}
