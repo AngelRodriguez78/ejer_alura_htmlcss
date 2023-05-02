@@ -13,7 +13,7 @@
 <body>
     <header>
         <div class="caja">
-            <h1><img src="/assets/images/logo.png" alt=""></h1>
+            <h1><img src="/assets/images/logo.png" alt="Logo de la Barberia"></h1>
             <nav>
                 <ul>
                     <li><a href="/index.html">Home</a></li>
@@ -26,19 +26,19 @@
     <main>
         <form>
             <label for="nombreCompleto">Nombre Completo</label>
-            <input type="text" id="nombreCompleto" class="input-padron">
+            <input type="text" id="nombreCompleto" class="input-padron" required>
 
             <label for="correo">Mail</label>
-            <input type="email" id="correo" class="input-padron">
+            <input type="email" id="correo" class="input-padron" required placeholder="nombre@dominio.mx">
 
             <label for="telefono">Telefono</label>
-            <input type="tel" id="telefono" class="input-padron">
+            <input type="tel" id="telefono" class="input-padron" placeholder="(XX)XXXX-XXXX">
 
             <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" id="" cols="70" rows="10"></textarea>
+            <textarea id="mensaje" id="" cols="70" rows="10" class="input-padron"></textarea>
 
-            <div>
-                <p>Como le gustaria que lo contactemos</p>
+            <fieldset>
+                <legend>Como le gustaria que lo contactemos</legend>
 
                 <label for="radio-email"><input type="radio" name="contacto" value="email"
                         id="radio-email">Email</label>
@@ -48,33 +48,60 @@
                         id="radio-telefono">Telefono</label>
 
 
-                <label for="radio-whatsapp"><input type="radio" name="contacto" value="whastApp"
-                        id="radio-whatsapp">WhastApp</label>
+                <label for="radio-whatsapp"><input type="radio" name="contacto" value="whastApp" id="radio-whatsapp"
+                        checked>WhastApp</label>
 
-            </div>
-            <div>
-                <p>En que horario te gustaria que te contactaran</p>
+            </fieldset>
+
+            <fieldset>
+                <legend>En que horario te gustaria que te contactaran</legend>
 
                 <select name="" id="">
                     <option value="">Mañana</option>
                     <option value="">Tarde</option>
                     <option value="">Noche</option>
                 </select>
-            </div>
+            </fieldset>
 
 
 
-            <label class="checknbox"><input type="checkbox">Le gustaria recibir todas las novedades?</label>
+            <label class="checkbox"><input checked type="checkbox">Le gustaria recibir todas las novedades?</label>
 
-            <input type="submit" value="Enviar Formulario">
+            <input class="enviar" type="submit" value="Enviar Formulario">
 
         </form>
+
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dias</th>
+                        <th>horario</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>08h - 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Miercoles</td>
+                        <td>08h - 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>08h - 20h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
 
     </main>
 
     <footer>
-        <img src="/assets/images/logo-blanco.png">
+        <img src="/assets/images/logo-blanco.png" alt="Logo de la Barberia">
         <p class="copyright">&copy Copyright Barberia Alura - 2023</p>
     </footer>
 
